@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "33837268680",
+    "firebase_url": "https://lynx-bbb6a.firebaseio.com",
+    "project_id": "lynx-bbb6a",
+    "storage_bucket": "lynx-bbb6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33837268680:android:7c3d3b7d976ba835",
+        "android_client_info": {
+          "package_name": "com.example.lynx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33837268680-m5aatlc657t7c97av2v9huduq1r0fup4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lynx",
+            "certificate_hash": "3d9ba9e71c01568b2e35f74727c3c7e4203d7be7"
+          }
+        },
+        {
+          "client_id": "33837268680-rvq2ankuicmanama64eob1uj4ogiicom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE6bn7VTAve2Njk2fy4HRbiQD0yMiIjyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33837268680-rvq2ankuicmanama64eob1uj4ogiicom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
