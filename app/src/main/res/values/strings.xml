@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lynx</string>
+    <string name="tv_if_login">"If you don\'t hang out in LYNX, that's the perfect time to create an account!"</string>
+
 </resources>

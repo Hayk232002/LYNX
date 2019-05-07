@@ -6,30 +6,30 @@
 
     <item
         android:drawable="@drawable/hello"
-        android:duration="250" />
+        android:duration="500" />
 
 
     <item
        android:drawable="@drawable/ciao"
-       android:duration="250" />
+       android:duration="500" />
 
 
     <item
         android:drawable="@drawable/privet"
-        android:duration="250" />
+        android:duration="500" />
 
 
     <item
         android:drawable="@drawable/salut"
-        android:duration="250" />
+        android:duration="500" />
 
 
     <item
         android:drawable="@drawable/que_tal"
-        android:duration="250" />
+        android:duration="500" />
 
 
     <item
         android:drawable="@drawable/chinese"
-        android:duration="250" />
+        android:duration="500" />
 </animation-list>

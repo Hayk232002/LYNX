@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
         btn_creatacc_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Registration1.class);
+                Intent intent = new Intent(Login.this,StartPage.class);
                 startActivity(intent);
             }
         });
