@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "33837268680-n8av0dhst55fmt0jquc4getb0dec7fp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lynx",
+            "certificate_hash": "633002dec4d99470d371cce33e0341b2f30ff6dd"
+          }
+        },
+        {
           "client_id": "33837268680-m5aatlc657t7c97av2v9huduq1r0fup4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
