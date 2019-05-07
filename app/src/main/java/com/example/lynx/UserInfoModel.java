@@ -1,21 +1,21 @@
 package com.example.lynx;
 
 public class UserInfoModel {
+    String day;
+    String downloadUri;
     String FirstName;
     String LastName;
-    String day;
     String month;
-    String year;
-    String sex;
     int phone;
+    String sex;
     String uid;
-    String downloadUri;
+    String year;
 
     public UserInfoModel(){
 
     }
 
-    public UserInfoModel(String firstName, String lastName, String day, String month, String year, String sex, int phone, String uid, String downloadUri) {
+    public UserInfoModel(String day,String downloadUri, String firstName, String lastName, String month, int phone, String sex, String uid, String year) {
         FirstName = firstName;
         LastName = lastName;
         this.day = day;
