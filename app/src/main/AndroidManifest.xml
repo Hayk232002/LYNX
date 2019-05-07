@@ -11,37 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity android:name=".StartPage"></activity>
         <activity
             android:name=".Registration5"
-            android:theme="@style/AppTheme.DarkActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.DarkActionBar"></activity>
         <activity
             android:name=".Registration4"
-            android:theme="@style/AppTheme.DarkActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.DarkActionBar"></activity>
         <activity
             android:name=".Registration3"
-            android:theme="@style/AppTheme.DarkActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.DarkActionBar"></activity>
         <activity
             android:name=".Registration2"
-            android:theme="@style/AppTheme.DarkActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.DarkActionBar"></activity>
         <activity
             android:name=".Registration1"
-            android:theme="@style/AppTheme.DarkActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.DarkActionBar"></activity>
         <activity
             android:name=".Login"
             android:theme="@style/AppTheme.DarkActionBar">
@@ -51,7 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
