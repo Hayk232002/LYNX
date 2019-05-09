@@ -40,12 +40,12 @@ public class Registration3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Registration3.this,Registration4.class);
-                intent.putExtra("first",first);
-                intent.putExtra("last",last);
-                intent.putExtra("day",et_day_reg3.getText().toString());
-                intent.putExtra("month",et_month_reg3.getText().toString());
-                intent.putExtra("year",et_year_reg3.getText().toString());
-                intent.putExtra("sex","male");
+//                intent.putExtra("first",first);
+//                intent.putExtra("last",last);
+//                intent.putExtra("day",et_day_reg3.getText().toString());
+//                intent.putExtra("month",et_month_reg3.getText().toString());
+//                intent.putExtra("year",et_year_reg3.getText().toString());
+//                intent.putExtra("sex","male");
                 startActivity(intent);
             }
         });
