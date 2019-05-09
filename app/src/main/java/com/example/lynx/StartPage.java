@@ -12,7 +12,7 @@ public class StartPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_page);
+        setContentView(R.layout.start_page);
         img_start_animation = (ImageView)  findViewById(R.id.img_start_animation);
 
         img_start_animation.post(new Runnable() {
