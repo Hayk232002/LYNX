@@ -32,7 +32,7 @@ public class Registration3 extends AppCompatActivity {
         last=intent.getStringExtra("last");
 
         btn_next_reg3 = (Button) findViewById(R.id.btn_next_reg3);
-        et_day_reg3 = (EditText) findViewById(R.id.et_day_reg3);
+//        et_day_reg3 = (EditText) findViewById(R.id.et_day_reg3);
         et_month_reg3 = (EditText) findViewById(R.id.et_month_reg3);
         et_year_reg3 = (EditText) findViewById(R.id.et_year_reg3);
 
