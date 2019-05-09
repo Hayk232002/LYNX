@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lynx</string>
+    <string name="Btn_reg"> REGISTER</string>
+    <string name="Btn_log"> LogIn</string>
 </resources>

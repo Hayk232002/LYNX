@@ -64,9 +64,13 @@ public class Registration4 extends AppCompatActivity {
         btn_next_reg4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                registration(et_email_reg4.getText().toString(),et_password_reg4.getText().toString());
+                if (et_password_reg4.getText().toString().equals(et_reappass_reg4.getText().toString())) {
+                    registration(et_email_reg4.getText().toString(), et_password_reg4.getText().toString());
+                }
 
-
+                else {
+                    Toast.makeText(Registration4.this,"The passwords do not match",Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
