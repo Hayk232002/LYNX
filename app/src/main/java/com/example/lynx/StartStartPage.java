@@ -53,9 +53,6 @@ public class StartStartPage extends AppCompatActivity {
         et_email_login = (EditText) findViewById(R.id.et_email_login);
         cl_login = (ConstraintLayout) findViewById(R.id.cl_login);
 
-//        btn_signIn_login_y = btn_signIn_login.getLocationOnScreen();
-        tv_forgot_y = tv_forgot.getY();
-
         Log.wtf("gal:","btn:" + btn_signIn_login_y);
         Log.wtf("gal:","tv:" + tv_forgot_y);
 
@@ -69,6 +66,9 @@ public class StartStartPage extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.toString().trim().length()!=0 && count==0){
                     Log.wtf("gnal:",charSequence.toString());
+
+                    btn_signIn_login_y = btn_signIn_login.getY();
+                    tv_forgot_y = tv_forgot.getY();
 
                     objectAnimator_tv_forgot_gnal=ObjectAnimator.ofFloat(tv_forgot,"y",1050);
                     objectAnimator_btn_login_gnal=ObjectAnimator.ofFloat(btn_signIn_login,"y",910);
