@@ -38,6 +38,7 @@ public class StartStartPage extends AppCompatActivity {
     ObjectAnimator objectAnimator_btn_login_gal;
 
     int count = 0;
+    boolean getCoordinates = false;
     float btn_signIn_login_y = 0;
     float tv_forgot_y = 0;
 
@@ -53,9 +54,6 @@ public class StartStartPage extends AppCompatActivity {
         et_email_login = (EditText) findViewById(R.id.et_email_login);
         cl_login = (ConstraintLayout) findViewById(R.id.cl_login);
 
-        Log.wtf("gal:","btn:" + btn_signIn_login_y);
-        Log.wtf("gal:","tv:" + tv_forgot_y);
-
         et_email_login.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -64,17 +62,22 @@ public class StartStartPage extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if(charSequence.toString().trim().length()!=0 && count==0){
-                    Log.wtf("gnal:",charSequence.toString());
 
+                if (!getCoordinates){
                     btn_signIn_login_y = btn_signIn_login.getY();
                     tv_forgot_y = tv_forgot.getY();
+
+                    getCoordinates = true;
+                }
+
+                if(charSequence.toString().trim().length()!=0 && count==0){
+                    Log.wtf("gnal:",charSequence.toString());
 
                     objectAnimator_tv_forgot_gnal=ObjectAnimator.ofFloat(tv_forgot,"y",1050);
                     objectAnimator_btn_login_gnal=ObjectAnimator.ofFloat(btn_signIn_login,"y",910);
 
-                    objectAnimator_btn_login_gnal.setDuration(400);
-                    objectAnimator_tv_forgot_gnal.setDuration(400);
+                    objectAnimator_btn_login_gnal.setDuration(350);
+                    objectAnimator_tv_forgot_gnal.setDuration(350);
                     objectAnimator_tv_forgot_gnal.start();
                     objectAnimator_btn_login_gnal.start();
 
@@ -89,6 +92,7 @@ public class StartStartPage extends AppCompatActivity {
                     et_password_login.setHint("Password");
                     et_password_login.setInputType(/*InputType.TYPE_TEXT_VARIATION_PASSWORD | InputType.TYPE_CLASS_TEXT*/129);
 //                    et_password_login.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
                     cl_login.addView(et_password_login);
 
                     count=1;
@@ -104,8 +108,8 @@ public class StartStartPage extends AppCompatActivity {
 
                     et_password_login.setVisibility(View.GONE);
 
-                    objectAnimator_btn_login_gal.setDuration(400);
-                    objectAnimator_tv_forgot_gal.setDuration(400);
+                    objectAnimator_btn_login_gal.setDuration(350);
+                    objectAnimator_tv_forgot_gal.setDuration(350);
                     objectAnimator_tv_forgot_gal.start();
                     objectAnimator_btn_login_gal.start();
 
