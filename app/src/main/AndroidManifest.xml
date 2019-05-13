@@ -12,11 +12,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".StartStartPage"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.DarkActionBar">
-        </activity>
-
         <activity
             android:name=".StartPage"
             android:screenOrientation="portrait"
