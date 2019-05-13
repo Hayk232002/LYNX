@@ -59,7 +59,8 @@ public class Login extends AppCompatActivity {
         btn_signIn_login = (Button) findViewById(R.id.btn_signIn_login);
         et_email_login = (EditText) findViewById(R.id.et_email_login);
         cl_login = (ConstraintLayout) findViewById(R.id.cl_login);
-        et_email_login = (EditText) findViewById(R.id.et_email_login);
+
+        //Firebase
         mAuth = FirebaseAuth.getInstance();
 
         btn_createacc_login.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +71,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        btn_signIn_login.setOnClickListener(new View.OnClickListener() {
+                btn_signIn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 singing(et_email_login.getText().toString(),et_password_login.getText().toString());
@@ -164,9 +165,9 @@ public class Login extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     if (mAuth.getCurrentUser().isEmailVerified()){
-//                        Intent intent = new Intent(Login.this, ProfileSettings.class);
-//                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                        startActivity(intent);
+                        Intent intent = new Intent(Login.this, StartPage.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intent);
                     }
 
                     else {
